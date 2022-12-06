@@ -1,0 +1,34 @@
+{
+  "itemName" : "pat_florp",
+  "shortdescription" : "florp",
+  "description" : "hi florp,",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "generic",
+	"tooltipFields" : {"subtitle" : "the rodent", "rarityLabel" : "hampter", "priceLabel" : "inf"},
+  "twoHanded" : false,
+	
+  "inventoryIcon" : "florp.png",
+	
+	"animationCustom" : {
+    "transformationGroups" : {
+      "florp" : {}
+    },
+    "animatedParts" : {
+      "parts" : {
+        "florp" : {
+          "properties" : {
+            "image" : "florp.png?flipx",
+            "centered" : true,
+            "offset" : [2, 4],
+            "scale" : 0.035,
+            "transformationGroups" : ["florp"]
+          }
+        }
+      }
+    }
+	},
+	
+  "scripts" : ["florp.lua"]
+}

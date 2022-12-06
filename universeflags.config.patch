@@ -1,0 +1,12 @@
+[
+  {
+    "op" : "add",
+    "path" : "/outpost_mission1/actions/-",
+    "value" : {
+      "type": "placeDungeon",
+      "dungeonId": "pat_outpostflorpnest",
+      "targetInstance": "hylotlmission1",
+      "targetPosition": [429, 1285]
+    }
+  }
+]

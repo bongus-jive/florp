@@ -1,0 +1,45 @@
+{
+  "transformationGroups" : {
+    "florp" : {}
+  },
+  
+  "animatedParts" : {
+    "stateTypes" : {
+      "florp" : {
+        "default" : "true",
+        "states" : { "false" : {}, "true" : {} }
+      }
+    },
+
+    "parts" : {
+      "nest" : {
+        "properties" : {
+          "image" : "<partImage>",
+          "centered" : true,
+          "zLevel" : 2
+        }
+      },
+      
+      "florp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "offset" : [0, 1],
+          "scale" : 0.035,
+          "transformationGroups" : ["florp"]
+        },
+        "partStates" : {
+          "florp" : {"true" : {"properties" : {"image" : "<partImage>"}}}
+        }
+      },
+      
+      "eggs" : {
+        "properties" : {
+          "image" : "<partImage>",
+          "centered" : true,
+          "zLevel" : 0
+        }
+      }
+    }
+  }
+}
